@@ -1,0 +1,23 @@
+{
+  "name": "cron",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zhangzhipeng-git/cron.git",
+  "author": "zhangzhipeng <1029512956@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "lib": "rimraf rf ./dist/lib && webpack --config ./webpack.config.lib.js",
+    "src": "rimraf rf ./dist/src && webpack --config ./webpack.config.dev.js",
+    "dev": "npm run lib && npm run src"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4"
+  }
+}
